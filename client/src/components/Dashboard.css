@@ -1,0 +1,53 @@
+/* client/src/components/Dashboard.css */
+
+.dashboard {
+  font-family: 'Press Start 2P', cursive;
+  position: fixed;
+  /* 稍微调整位置，离边缘远一点 */
+  top: 30px;
+  left: 30px;
+  
+  /* --- (核心修改) 温暖的木制主题 --- */
+  background-color: #6B4F4B; /* 深木色 */
+  border: 4px solid #EFE2BA;   /* 奶油色边框 */
+  box-shadow: 8px 8px 0px #4a2c2a; /* 深棕色阴影 */
+  color: #FFF8DC;             /* 温暖的白色字体 (玉米穗色) */
+
+  padding: 15px; /* 增加内边距 */
+  width: auto;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* 增加元素间距 */
+
+ /* (核心修改) 增加文字间距，解决拥挤感 */
+  letter-spacing: 1px;
+}
+/**/
+.dashboard .welcome-message {
+  border: none;
+  font-size: 12px; /* 稍微增大字体 */
+  padding-bottom: 10px;
+  border-bottom: 2px solid #EFE2BA; /* 匹配边框颜色 */
+  text-align: center;
+}
+
+.dashboard .time {
+  font-size: 28px;
+  line-height: 1.2; /* 增加行高 */
+}
+
+.dashboard .date,
+.dashboard .stats-title {
+  font-size: 10px;
+  opacity: 0.9;
+}
+
+.dashboard .stats-time {
+  font-size: 16px;
+}
+
+.dashboard .focus-stats, .dashboard .date-time {
+    text-align: center;
+}
+

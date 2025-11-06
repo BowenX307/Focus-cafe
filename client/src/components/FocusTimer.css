@@ -1,0 +1,81 @@
+/* client/src/components/FocusTimer.css */
+
+.timer-widget {
+  font-family: 'Press Start 2P', cursive;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #6B4F4B; /* 深木色 */
+  border: 4px solid #EFE2BA;   /* 奶油色边框 */
+  box-shadow: 8px 8px 0px #4a2c2a; /* 深棕色阴影 */
+  color: #FFF8DC;             /* 温暖的白色字体 */
+  min-width: 220px;
+  padding: 15px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* 所有按钮的通用像素风格 */
+.timer-widget button {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #A47551; /* 浅木色 */
+  color: #FFF8DC;
+  border: 2px solid #EFE2BA;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 10px;
+  
+  /* (核心新增) 添加立体感和按下效果 */
+  box-shadow: 4px 4px 0px #4a2c2a;
+  position: relative;
+  transition: all 0.05s ease-out;
+}
+
+.timer-widget button:hover {
+  background-color: #C39871; /* 悬停时更亮 */
+}
+
+.timer-widget button:active {
+  /* 按下时的效果 */
+  box-shadow: 1px 1px 0px #4a2c2a;
+  top: 3px;
+  left: 3px;
+}
+
+/* (核心新增) 为初始的“Start Focus”按钮定制样式 */
+.timer-widget .start-focus-btn {
+  font-size: 14px;      /* 更大的字体 */
+  padding: 15px 20px; /* 更大的内边距 */
+  background-color: #7A9E7E; /* 使用温暖的绿色作为主色调 */
+  width: 90%; /* 让它几乎占满整个宽度 */
+}
+
+.timer-widget .start-focus-btn:hover {
+  background-color: #8ac08e; /* 悬停时是更亮的绿色 */
+}
+
+
+/* 其他元素样式 */
+.timer-widget button.selected {
+  background-color: #8D5B4C;
+  color: #fff;
+}
+
+.timer-widget input {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #4a2c2a;
+  border: 2px solid #EFE2BA;
+  color: #FFF8DC;
+  font-size: 10px;
+  width: 120px;
+  text-align: center;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.timer-widget .countdown-display {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
